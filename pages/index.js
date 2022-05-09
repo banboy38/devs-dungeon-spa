@@ -14,7 +14,7 @@ export default function Home() {
 
       <Navbar/>
       
-      <div className='mt-[20vh] gap-5 flex justify-around place-items-center p-7'>
+      <div className='mt-[20vh] gap-5  flex justify-around place-items-center p-7'>
 
         <div className='text-[rgba(255,255,255,1)] w-[636px] h-[137px]'>
           <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
