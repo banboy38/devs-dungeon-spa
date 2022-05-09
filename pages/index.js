@@ -9,7 +9,7 @@ export default function Home() {
     <>
 
       <Head>
-        <title>Devs Dungeon</title>
+        <title>DEVs Dungeon</title>
       </Head>
 
       <Navbar/>
