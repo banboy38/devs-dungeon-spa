@@ -28,3 +28,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.barInitial{
+  transition: all 0.625s ease-in-out;
+}
+.hide{
+
+  transform: translateY(-100%);
+  
+}
