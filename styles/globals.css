@@ -33,10 +33,18 @@ a {
 
 
 .barInitial{
-  transition: all 0.625s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .hide{
-
   transform: translateY(-100%);
-  
+  opacity : 0;
+}
+
+.textAnim{
+  opacity : 1;
+  transition: all 0.4s ease-in-out;
+}
+.fade{
+  transform: translateY(5%);
+  opacity : 0;
 }

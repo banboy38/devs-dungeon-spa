@@ -40,7 +40,7 @@ export default function Navbar() {
                     <Link href='#'><Image alt="logo" placeholder="blur" src={logo}></Image></Link>
                     <div className='flex gap-[1.5em] font-bold '>
                         <Link href = '#'>Home</Link>
-                        <Link href = '#'>About</Link>
+                        <Link href = '#about'>About</Link>
                         <Link href = '#'>Team</Link>
                         <Link href = '#'>Opportunities</Link>
                         <Link href = '#'>Blogs</Link>
