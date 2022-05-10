@@ -20,7 +20,7 @@ export default function Home() {
           <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
           <p className='rounded-full bg-white text-black shadow-lg hover:text-white hover:bg-gray-900 text-center pt-[0.2em] p-[0.3em] mt-4 w-[5em]'><Link href='#'>Join Us</Link></p>
         </div>
-        <Image alt="abstract office picture" src={mainPic}></Image>
+        <Image alt="abstract office picture" placeholder="blur" src={mainPic}></Image>
 
       </div>
 

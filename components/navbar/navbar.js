@@ -14,7 +14,7 @@ export default function Navbar() {
     if(browser){
         return(
             <NavBar className='flex justify-between place-items-center'>
-                <Image alt="logo" src={logo}></Image>
+                <Image alt="logo" placeholder="blur" src={logo}></Image>
                 <div className='flex gap-[1.5em] font-bold '>
                     <Link href = '#'>Home</Link>
                     <Link href = '#'>About</Link>
