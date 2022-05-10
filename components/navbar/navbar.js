@@ -37,7 +37,7 @@ export default function Navbar() {
                     `}
                 </Script>
                 <NavBar id='bar' className='barInitial flex justify-between place-items-center'>
-                    <Image alt="logo" placeholder="blur" src={logo}></Image>
+                    <Link href='#'><Image alt="logo" placeholder="blur" src={logo}></Image></Link>
                     <div className='flex gap-[1.5em] font-bold '>
                         <Link href = '#'>Home</Link>
                         <Link href = '#'>About</Link>
