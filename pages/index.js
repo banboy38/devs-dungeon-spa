@@ -57,7 +57,7 @@ export default function Home() {
 
       <div className='textAnim fade'>
 
-        <div className='text-center text-2xl text-white font-semibold mt-[2em]'>Perks of joining us</div>
+        <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Perks of joining us</div>
         
         <div className='mt-[0vh] gap-5 flex justify-around place-items-center p-7'>
           
