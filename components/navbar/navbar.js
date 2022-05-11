@@ -2,7 +2,7 @@ import {NavBar} from './styles'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../public/logotextb 1.png'
+import logo from '../../public/logotextb 1.svg'
 import Script from 'next/script'
 
 export default function Navbar() {
@@ -37,7 +37,7 @@ export default function Navbar() {
                     `}
                 </Script>
                 <NavBar id='bar' className='barInitial flex justify-between place-items-center'>
-                    <Link href='#'><Image alt="logo" placeholder="blur" src={logo}></Image></Link>
+                    <Link href='#'><Image alt="logo" src={logo}></Image></Link> {/*placeholder="blur"*/}
                     <div className='flex gap-[1.5em] font-bold '>
                         <Link href = '#'>Home</Link>
                         <Link href = '#about'>About</Link>

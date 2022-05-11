@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Navbar from '../components/navbar/navbar'
-import mainPic from '../public/Group 119.png'
-import twoPic from '../public/pic2.png'
+import mainPic from '../public/Group 119.svg'
+import twoPic from '../public/pic2.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
+import Statbar from '../components/statbar/statbar'
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
               var elementTop = reveals[i].getBoundingClientRect().top;
               var elementVisible = 0;
               // console.log(elementTop, windowHeight, elementVisible);
-              if (elementTop < (85/100)*windowHeight) {
+              if (elementTop < (80/100)*windowHeight) {
                 reveals[i].classList.remove("fade");
               } else {
                 reveals[i].classList.add("fade");
@@ -42,25 +43,25 @@ export default function Home() {
 
       <Navbar/>
       
-      <div className='mt-[20vh] gap-5 flex justify-around place-items-center p-7'>
+      <div className='mt-[6rem] md:mt-[8rem] gap-5 flex justify-around place-items-center p-7'>
 
         <div className='text-[rgba(255,255,255,1)] w-[636px] h-[137px]'>
           <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
           <p className='rounded-full bg-white text-black shadow-lg hover:text-white hover:bg-gray-900 text-center pt-[0.2em] p-[0.3em] mt-4 w-[5em]'><Link href='#'>Join Us</Link></p>
         </div>
-        <Image alt="abstract office picture" placeholder="blur" src={mainPic}></Image>
+        <Image alt="abstract office picture" src={mainPic}></Image>
 
       </div>
 
       <div id = "about"></div>
 
-      <div className='textAnim'>
+      <div className='textAnim fade'>
 
         <div className='text-center text-2xl text-white font-semibold mt-[2em]'>Perks of joining us</div>
         
         <div className='mt-[0vh] gap-5 flex justify-around place-items-center p-7'>
           
-          <Image alt="abstract office picture" placeholder="blur" src={twoPic}></Image>
+          <Image alt="abstract office picture" src={twoPic}></Image>
 
           <div className='text-[rgba(255,255,255,1)] w-[50%]'>
             <ul>
@@ -75,10 +76,9 @@ export default function Home() {
         
         </div>
 
-
-        
-          
       </div>
+
+      <Statbar/>
 
     </>
   )
