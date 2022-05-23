@@ -25,14 +25,14 @@ export default function Statbar() {
         console.log(num.members)
     }, 100);
     
-    if(num.members >= 100){ 
+    if(num.members > 99){ 
         clearInterval(interval) 
     }
 
     // clearInterval(interval)
-    setTimeout(() => {
-        clearInterval(interval)
-    }, 100);
+    // setTimeout(() => {
+    //     clearInterval(interval)
+    // }, 100);
     
     if(browser){   
 
