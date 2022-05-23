@@ -68,7 +68,7 @@ export default function Home() {
           
           <Image alt="abstract office picture" src={twoPic}></Image>
 
-          <div className='text-[rgba(255,255,255,1)] w-[50%]'>
+          <div className='text-[rgba(255,255,255,1)] w-[90%] md:w-[50%]'>
             <ul>
               <li>➤ Share your work, get advice and collaborate with a large diverse group</li>
               <li>➤ Grow your connection and meet new friends and business contacts</li>
