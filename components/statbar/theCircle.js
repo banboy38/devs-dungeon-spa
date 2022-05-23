@@ -38,7 +38,8 @@ export default function Gola({icon, alt, val, text, id}){
             const ceil = document.getElementById(id).getBoundingClientRect().top
 
             if (ceil < 80 / 100 * (window.innerHeight)) {
-              animate()              
+              animate();
+              window.removeEventListener("scroll", increment)
             }
           }
 
