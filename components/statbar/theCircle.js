@@ -2,16 +2,16 @@ import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 import { Circle } from './styles'
 
-export default function Gola({icon, alt, val, text}){
+export default function Gola({icon, alt, val, text, time}){
 
     const [num, setnum] = useState(0)
     const interval= setInterval(() => {
         setnum(prevstate => (prevstate+1))
         // console.log(num)
-    }, 10);
+    }, time);
     setTimeout(() => {
         clearInterval(interval)
-    }, 10);
+    }, time);
     
     if(num > val-1){ 
         clearInterval(interval) 

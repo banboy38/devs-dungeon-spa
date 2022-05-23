@@ -79,13 +79,13 @@ export default function Statbar() {
 
                 <StatBar className='flex justify-around place-items-center'>
 
-                    <Gola icon = {personIcon} val={100} alt="person icon" text="Events"/>
+                    <Gola icon = {personIcon} val={100} alt="person icon" text="Events" time={10}/>
 
-                    <Gola icon = {globeIcon} val={30} alt="globe icon" text="Countries"/>
+                    <Gola icon = {globeIcon} val={30} alt="globe icon" text="Countries" time={10}/>
 
-                    <Gola icon = {graduate} val={10} alt="graduation hat icon" text="Mentors"/>
+                    <Gola icon = {graduate} val={10} alt="graduation hat icon" text="Mentors" time={10}/>
 
-                    <Gola icon = {calendar} val={5} alt="calendar icon" text="Events"/>
+                    <Gola icon = {calendar} val={5} alt="calendar icon" text="Events" time={10}/>
                     
                 </StatBar>            
             </>
