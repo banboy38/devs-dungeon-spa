@@ -55,7 +55,7 @@ export default function Statbar() {
                     // `}
                 </Script>
 
-                <StatBar className='flex flex-wrap justify-around place-items-center'>
+                <StatBar className='flex flex-wrap gap-y-5 justify-around place-items-center'>
 
                     <Gola icon = {personIcon} val={100} alt="person icon" text="Members" id="members"/>
 
