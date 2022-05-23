@@ -81,11 +81,11 @@ export default function Statbar() {
 
                     <Gola icon = {personIcon} val={100} alt="person icon" text="Events" time={10}/>
 
-                    <Gola icon = {globeIcon} val={30} alt="globe icon" text="Countries" time={10}/>
+                    <Gola icon = {globeIcon} val={30} alt="globe icon" text="Countries" time={5}/>
 
-                    <Gola icon = {graduate} val={10} alt="graduation hat icon" text="Mentors" time={10}/>
+                    <Gola icon = {graduate} val={10} alt="graduation hat icon" text="Mentors" time={5}/>
 
-                    <Gola icon = {calendar} val={5} alt="calendar icon" text="Events" time={1000}/>
+                    <Gola icon = {calendar} val={5} alt="calendar icon" text="Events" time={10}/>
                     
                 </StatBar>            
             </>
