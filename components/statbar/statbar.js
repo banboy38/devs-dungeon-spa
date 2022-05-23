@@ -85,7 +85,7 @@ export default function Statbar() {
 
                     <Gola icon = {graduate} val={10} alt="graduation hat icon" text="Mentors" time={5}/>
 
-                    <Gola icon = {calendar} val={5} alt="calendar icon" text="Events" time={10}/>
+                    <Gola icon = {calendar} val={5} alt="calendar icon" text="Events" time={1}/>
                     
                 </StatBar>            
             </>
