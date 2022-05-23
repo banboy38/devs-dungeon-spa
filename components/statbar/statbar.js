@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
 import { StatBar, Circle } from './styles'
+import Gola from './theCircle'
 
 
 import personIcon from '../../public/personIcon.svg'
@@ -78,13 +79,14 @@ export default function Statbar() {
 
                 <StatBar className='flex justify-around place-items-center'>
                     
-                    <Circle className='flex flex-col justify-around place-items-center'>
+                    {/* <Circle className='flex flex-col justify-around place-items-center'>
                         <Image src={personIcon} alt="person icon" />
                         <div className='text-center text-white tracking-wide font-bold'>
                             <p id='trial' className='trial'>{num}+</p>
                             <p>Members</p>
                         </div>
-                    </Circle>
+                    </Circle> */}
+                    <Gola icon = {personIcon} val={100} alt="person icon" text="Events"/>
 
                     <Circle className='flex flex-col justify-around place-items-center'>
                         <Image src={globeIcon} alt="globe icon" />
@@ -103,13 +105,14 @@ export default function Statbar() {
                     </Circle>
 
                     
-                    <Circle className='flex flex-col justify-around place-items-center'>
+                    {/* <Circle className='flex flex-col justify-around place-items-center'>
                         <Image src={calendar} alt="calendar icon" />
                         <div className='text-center text-white tracking-wide font-bold'>
                             <p>5+</p>
                             <p>Events</p>
                         </div>
-                    </Circle>
+                    </Circle> */}
+                    <Gola icon = {calendar} val={5} alt="calendar icon" text="Events"/>
                     
                 </StatBar>            
             </>
