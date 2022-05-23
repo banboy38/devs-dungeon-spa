@@ -6,19 +6,6 @@ import anime from 'animejs'
 
 export default function Gola({icon, alt, val, text, id}){
 
-    // const [num, setnum] = useState(0)
-    // const interval= setInterval(() => {
-    //     setnum(prevstate => (prevstate+1))
-    //     // console.log(num)
-    // }, time);
-    // setTimeout(() => {
-    //     clearInterval(interval)
-    // }, time);
-    
-    // if(num > val-1){ 
-    //     clearInterval(interval) 
-    // }
-
     const [browser, setBrowser] = useState(false)
     useEffect(() => {
         setBrowser(true)
@@ -36,7 +23,7 @@ export default function Gola({icon, alt, val, text, id}){
             easing: 'linear',
             round: 1,
             update: function() {
-              document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1);
+              document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1)+"+";
             }
           });
 
