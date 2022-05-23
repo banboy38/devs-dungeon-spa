@@ -18,18 +18,18 @@ export default function Gola({icon, alt, val, text, id}){
         prop1: 0,
       }
         
-        function animate(){
-          
-          anime({
-            targets: myObject,
-            prop1: val,
-            easing: 'linear',
-            round: 1,
-            update: function() {
-              document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1)+"+";
-            }
-          });
-        }
+      function animate(){
+        
+        anime({
+          targets: myObject,
+          prop1: val,
+          easing: 'easeInSine',
+          round: 1,
+          update: function() {
+            document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1)+"+";
+          }
+        });
+      }
           
 
         setTimeout(() => {
@@ -37,7 +37,7 @@ export default function Gola({icon, alt, val, text, id}){
           function increment() {
             const ceil = document.getElementById(id).getBoundingClientRect().top
 
-            if (ceil < 70 / 100 * (window.innerHeight)) {
+            if (ceil < 80 / 100 * (window.innerHeight)) {
               animate()              
             }
           }

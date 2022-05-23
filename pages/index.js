@@ -60,7 +60,7 @@ export default function Home() {
 
       <div id = "about"></div>
 
-      <div className='textAnim fade'>
+      <div className='textAnim'>
 
         <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Perks of joining us</div>
         
