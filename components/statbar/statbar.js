@@ -78,40 +78,13 @@ export default function Statbar() {
                 </Script>
 
                 <StatBar className='flex justify-around place-items-center'>
-                    
-                    {/* <Circle className='flex flex-col justify-around place-items-center'>
-                        <Image src={personIcon} alt="person icon" />
-                        <div className='text-center text-white tracking-wide font-bold'>
-                            <p id='trial' className='trial'>{num}+</p>
-                            <p>Members</p>
-                        </div>
-                    </Circle> */}
+
                     <Gola icon = {personIcon} val={100} alt="person icon" text="Events"/>
 
-                    <Circle className='flex flex-col justify-around place-items-center'>
-                        <Image src={globeIcon} alt="globe icon" />
-                        <div className='text-center text-white tracking-wide font-bold'>
-                            <p>{country}+</p>
-                            <p>Countries</p>
-                        </div>
-                    </Circle>
+                    <Gola icon = {globeIcon} val={30} alt="globe icon" text="Countries"/>
 
-                    <Circle className='flex flex-col justify-around place-items-center'>
-                        <Image src={graduate} alt="graduation hat icon" />
-                        <div className='text-center text-white tracking-wide font-bold'>
-                            <p>10+</p>
-                            <p>Mentors</p>
-                        </div>
-                    </Circle>
+                    <Gola icon = {graduate} val={10} alt="graduation hat icon" text="Mentors"/>
 
-                    
-                    {/* <Circle className='flex flex-col justify-around place-items-center'>
-                        <Image src={calendar} alt="calendar icon" />
-                        <div className='text-center text-white tracking-wide font-bold'>
-                            <p>5+</p>
-                            <p>Events</p>
-                        </div>
-                    </Circle> */}
                     <Gola icon = {calendar} val={5} alt="calendar icon" text="Events"/>
                     
                 </StatBar>            
