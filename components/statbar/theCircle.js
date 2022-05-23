@@ -28,8 +28,15 @@ export default function Gola({icon, alt, val, text, id}){
             }
           });
 
-          if(document.getElementById(id))
-          console.log(document.getElementById(id).getBoundingClientRect().top)
+          setTimeout(() => {
+            if(document.getElementById(id))
+            {
+              console.log(document.getElementById(id).getBoundingClientRect().top)
+              
+            }            
+          }, 0);
+         
+          
       
     return(
         <>
