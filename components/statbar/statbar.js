@@ -31,7 +31,7 @@ export default function Statbar() {
 
     setTimeout(() => {
         clearInterval(interval)
-    }, 50);
+    }, 150);
     
     if(browser){   
 
