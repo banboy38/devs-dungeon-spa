@@ -6,7 +6,7 @@ export const StatBar = styled.div`
     border-radius: 50px;
     background: #F2F2F2;
     box-shadow:  -20px 20px 60px #0f0f0f, 20px -20px 60px #151515;
-    min-height : 469px;
+    // min-height : 469px;
     // margin-top : 8em;
     margin : 8em 1em 0em 1em;
 
