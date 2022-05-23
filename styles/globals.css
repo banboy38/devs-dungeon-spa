@@ -4,6 +4,8 @@
 
 html,
 body {
+
+  scroll-behavior: smooth;
   
   padding: 0;
   margin: 0;
@@ -28,3 +30,42 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.barInitial{
+  transition: all 0.4s ease-in-out;
+}
+.hide{
+  transform: translateY(-100%);
+  opacity : 0;
+}
+
+.textAnim{
+  opacity : 1;
+  transition: all 0.4s ease-in-out;
+}
+.fade{
+  transform: translateY(5%);
+  opacity : 0;
+}
+/* ---------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
