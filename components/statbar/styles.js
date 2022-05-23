@@ -19,8 +19,8 @@ export const Circle = styled.div`
     background : linear-gradient(180deg, #080808 18.54%, #121212 100%);
     backdrop-filter: blur(500px);
     
-    width: 28%;
-    height: 28%;
+    width: 5em;
+    height: 5em;
 
     border-radius : 50%;
 
