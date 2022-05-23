@@ -48,7 +48,7 @@ export default function Home() {
 
       <Navbar/>
       
-      <div className='mt-[6rem] md:mt-[7rem] gap-5 flex flex-wrap justify-around place-items-center p-7'>
+      <div className='mt-[6rem] md:mt-[7rem] gap-5 flex flex-wrap justify-around place-items-center p-2'>
 
         <div className='text-[rgba(255,255,255,1)] w-[636px] h-[137px]'>
           <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
@@ -64,7 +64,7 @@ export default function Home() {
 
         <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Perks of joining us</div>
         
-        <div className='mt-[0vh] gap-5 flex flex-wrap justify-around place-items-center p-7'>
+        <div className='mt-[0vh] gap-5 flex flex-wrap justify-around place-items-center p-2'>
           
           <Image alt="abstract office picture" src={twoPic}></Image>
 
