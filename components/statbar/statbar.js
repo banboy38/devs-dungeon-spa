@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
@@ -14,24 +14,25 @@ export default function Statbar() {
     const [browser, setBrowser] = useState(false)
     const [stats, setStats] = useState({members : 0, countries : 0, mentors : 0, events : 0, id : 1})
 
-    const [num, setnum] = useState({members : 0})
+    const [num, setnum] = useState(0)
 
     useEffect(() => {
       setBrowser(true)
     }, [])
 
     const interval= setInterval(() => {
-        setnum(prevstate => ({members : prevstate.members + 1}))
-        console.log(num.members)
+        setnum(prevstate => (prevstate+1))
+        console.log(num)
     }, 1);
-    
-    if(num.members > 99){ 
-        clearInterval(interval) 
-    }
-
     setTimeout(() => {
         clearInterval(interval)
     }, 1);
+    
+    if(num > 99){ 
+        clearInterval(interval) 
+    }
+
+   
     
     if(browser){   
 
