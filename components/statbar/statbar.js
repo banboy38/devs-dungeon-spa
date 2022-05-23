@@ -32,6 +32,18 @@ export default function Statbar() {
         clearInterval(interval) 
     }
 
+    const country = useRef(0)
+    const interval2 = setInterval(() => {
+        country.current += 1
+    }, 1);
+    setTimeout(() => {
+        clearInterval(interval2)
+    }, 1);
+    
+    if(num > 29){ 
+        clearInterval(interval2) 
+    } 
+
    
     
     if(browser){   
@@ -76,7 +88,7 @@ export default function Statbar() {
                     <Circle className='flex flex-col justify-around place-items-center'>
                         <Image src={globeIcon} alt="globe icon" />
                         <div className='text-center text-white tracking-wide font-bold'>
-                            <p>30+</p>
+                            <p>{country.current}+</p>
                             <p>Countries</p>
                         </div>
                     </Circle>
