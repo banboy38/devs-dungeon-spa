@@ -48,7 +48,7 @@ export default function Home() {
 
       <Navbar/>
       
-      <div className='mt-[6rem] md:mt-[7rem] gap-2 flex flex-wrap justify-around place-items-center p-2'>
+      <div className='mt-[6rem] md:mt-[7rem] gap-2 flex flex-row flex-wrap justify-around place-items-center p-2'>
 
         <div className='text-[rgba(255,255,255,1)]'>
           <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
