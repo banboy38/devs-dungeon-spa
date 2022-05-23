@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
 import { Circle } from './styles'
+import Script from 'next/dist/client/script'
 
 import anime from 'animejs'
 
@@ -27,12 +28,14 @@ export default function Gola({icon, alt, val, text, id}){
             }
           });
 
+          console.log(document.getElementById(id).getBoundingClientRect().top)
+      
     return(
         <>
             <Circle className='flex flex-col justify-around place-items-center'>
                 <Image src={icon} alt={alt} />
                 <div className='text-center text-white tracking-wide font-bold'>
-                    <p id={id} className='trial'></p>
+                    <p id={id} className='trial'>0+</p>
                     <p>{text}</p>
                 </div>
             </Circle>
