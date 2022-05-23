@@ -8,6 +8,8 @@ import Script from 'next/script'
 import Statbar from '../components/statbar/statbar'
 
 export default function Home() {
+
+
   return (
     <>
 
