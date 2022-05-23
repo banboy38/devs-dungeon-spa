@@ -20,9 +20,10 @@ export default function Statbar() {
       setBrowser(true)
     }, [])
 
-    const num = useRef(0)
+    const [num, setnum] = useState(0)
     const interval= setInterval(() => {
-        num.current += 1
+        setnum(prevstate => (prevstate+1))
+        console.log(num)
     }, 1);
     setTimeout(() => {
         clearInterval(interval)
@@ -32,17 +33,17 @@ export default function Statbar() {
         clearInterval(interval) 
     }
 
-    const country = useRef(0)
-    const interval2 = setInterval(() => {
-        country.current += 1
-    }, 1);
-    setTimeout(() => {
-        clearInterval(interval2)
-    }, 1);
+    // const country = useRef(0)
+    // const interval2 = setInterval(() => {
+    //     country.current += 1
+    // }, 1);
+    // setTimeout(() => {
+    //     clearInterval(interval2)
+    // }, 1);
     
-    if(num > 29){ 
-        clearInterval(interval2) 
-    } 
+    // if(num > 29){ 
+    //     clearInterval(interval2) 
+    // } 
 
    
     
@@ -80,7 +81,7 @@ export default function Statbar() {
                     <Circle className='flex flex-col justify-around place-items-center'>
                         <Image src={personIcon} alt="person icon" />
                         <div className='text-center text-white tracking-wide font-bold'>
-                            <p id='trial' className='trial'>{num.current}+</p>
+                            <p id='trial' className='trial'>{num}+</p>
                             <p>Members</p>
                         </div>
                     </Circle>
@@ -88,7 +89,7 @@ export default function Statbar() {
                     <Circle className='flex flex-col justify-around place-items-center'>
                         <Image src={globeIcon} alt="globe icon" />
                         <div className='text-center text-white tracking-wide font-bold'>
-                            <p>{country.current}+</p>
+                            <p>{30}+</p>
                             <p>Countries</p>
                         </div>
                     </Circle>
