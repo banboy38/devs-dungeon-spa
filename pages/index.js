@@ -48,9 +48,9 @@ export default function Home() {
 
       <Navbar/>
       
-      <div className='mt-[6rem] md:mt-[7rem] gap-5 flex flex-wrap md:flex-nowrap md:flex-row justify-around place-items-center p-2 md:p-7'>
+      <div className='mt-[6rem] md:mt-[7rem] gap-5 flex flex-wrap md:flex-nowrap md:flex-row justify-around place-items-center p-2'>
 
-        <div className='text-[rgba(255,255,255,1)]'>
+        <div className='text-[rgba(255,255,255,1)] w-[90%] md:w-[50%]'>
           <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
           <p className='rounded-full bg-white text-black shadow-lg hover:text-white hover:bg-gray-900 text-center pt-[0.2em] p-[0.3em] mt-4 w-[5em]'><Link href='#'>Join Us</Link></p>
         </div>
