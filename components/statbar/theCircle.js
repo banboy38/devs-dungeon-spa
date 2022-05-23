@@ -8,10 +8,10 @@ export default function Gola({icon, alt, val, text}){
     const interval= setInterval(() => {
         setnum(prevstate => (prevstate+1))
         // console.log(num)
-    }, 50);
+    }, 10);
     setTimeout(() => {
         clearInterval(interval)
-    }, 50);
+    }, 10);
     
     if(num > val-1){ 
         clearInterval(interval) 
