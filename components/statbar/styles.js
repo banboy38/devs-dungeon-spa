@@ -9,6 +9,7 @@ export const StatBar = styled.div`
     // min-height : 469px;
     // margin-top : 8em;
     margin : 8em 1em 20vh 1em;
+    padding : 1em 1em 1em 1em;
 
 `
 
