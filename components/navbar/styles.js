@@ -7,6 +7,8 @@ background : #F2F2F2;
 // border-radius: 20px;
 box-shadow:  -20px 20px 60px #0f0f0f,
              20px -20px 60px #151515;
+backdrop-filter : opacity(40%);
+backdrop-filter : blur(2em);
 
 min-height: 100px;
 position : fixed;
