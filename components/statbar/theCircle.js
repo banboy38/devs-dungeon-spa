@@ -36,7 +36,7 @@ export default function Gola({icon, alt, val, text, id}){
             easing: 'linear',
             round: 1,
             update: function() {
-              document.getElementById("gg").innerHTML = JSON.stringify(myObject.prop1);
+              document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1);
             }
           });
 
