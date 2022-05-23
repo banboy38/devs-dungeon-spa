@@ -18,22 +18,29 @@ export default function Gola({icon, alt, val, text, id}){
             prop1: 0,
           }
       
-          anime({
-            targets: myObject,
-            prop1: val,
-            easing: 'linear',
-            round: 1,
-            update: function() {
-              document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1)+"+";
-            }
-          });
+          
 
           setTimeout(() => {
-            if(document.getElementById(id))
-            {
-              console.log(document.getElementById(id).getBoundingClientRect().top)
-              
-            }            
+
+            function increment() {
+              const ceil = document.getElementById(id).getBoundingClientRect().top
+
+              if (ceil < 70 / 100 * (window.innerHeight)) {
+                // console.log(ceil, window.innerHeight)
+                anime({
+                  targets: myObject,
+                  prop1: val,
+                  easing: 'linear',
+                  round: 1,
+                  update: function() {
+                    document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1)+"+";
+                  }
+                });
+              }
+            }
+
+            window.addEventListener("scroll", increment)
+
           }, 0);
          
           
