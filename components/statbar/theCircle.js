@@ -14,34 +14,37 @@ export default function Gola({icon, alt, val, text, id}){
 
     if(browser){
 
-        var myObject = {
-            prop1: 0,
-          }
-      
+      var myObject = {
+        prop1: 0,
+      }
+        
+        function animate(){
+          
+          anime({
+            targets: myObject,
+            prop1: val,
+            easing: 'linear',
+            round: 1,
+            update: function() {
+              document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1)+"+";
+            }
+          });
+        }
           
 
-          setTimeout(() => {
+        setTimeout(() => {
 
-            function increment() {
-              const ceil = document.getElementById(id).getBoundingClientRect().top
+          function increment() {
+            const ceil = document.getElementById(id).getBoundingClientRect().top
 
-              if (ceil < 70 / 100 * (window.innerHeight)) {
-                // console.log(ceil, window.innerHeight)
-                anime({
-                  targets: myObject,
-                  prop1: val,
-                  easing: 'linear',
-                  round: 1,
-                  update: function() {
-                    document.getElementById(id).innerHTML = JSON.stringify(myObject.prop1)+"+";
-                  }
-                });
-              }
+            if (ceil < 70 / 100 * (window.innerHeight)) {
+              animate()              
             }
+          }
 
-            window.addEventListener("scroll", increment)
+          window.addEventListener("scroll", increment)
 
-          }, 0);
+        }, 0);
          
           
       
