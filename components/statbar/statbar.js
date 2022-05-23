@@ -23,7 +23,7 @@ export default function Statbar() {
     const interval= setInterval(() => {
         setnum(prevstate => ({members : prevstate.members + 1}))
         console.log(num.members)
-    }, 100);
+    }, 20);
     
     if(num.members > 99){ 
         clearInterval(interval) 
@@ -31,7 +31,7 @@ export default function Statbar() {
 
     setTimeout(() => {
         clearInterval(interval)
-    }, 150);
+    }, 20);
     
     if(browser){   
 
