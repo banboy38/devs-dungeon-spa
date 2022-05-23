@@ -8,7 +8,7 @@ export const StatBar = styled.div`
     box-shadow:  -20px 20px 60px #0f0f0f, 20px -20px 60px #151515;
     // min-height : 469px;
     // margin-top : 8em;
-    margin : 8em 1em 0em 1em;
+    margin : 8em 1em 20vh 1em;
 
 `
 
