@@ -29,10 +29,9 @@ export default function Statbar() {
         clearInterval(interval) 
     }
 
-    // clearInterval(interval)
-    // setTimeout(() => {
-    //     clearInterval(interval)
-    // }, 100);
+    setTimeout(() => {
+        clearInterval(interval)
+    }, 100);
     
     if(browser){   
 
