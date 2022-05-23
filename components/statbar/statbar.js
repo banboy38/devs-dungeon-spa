@@ -14,15 +14,15 @@ export default function Statbar() {
     const [browser, setBrowser] = useState(false)
     const [stats, setStats] = useState({members : 0, countries : 0, mentors : 0, events : 0, id : 1})
 
-    const [num, setnum] = useState(0)
+    
 
     useEffect(() => {
       setBrowser(true)
     }, [])
 
+    const num = useRef(0)
     const interval= setInterval(() => {
-        setnum(prevstate => (prevstate+1))
-        console.log(num)
+        num.current += 1
     }, 1);
     setTimeout(() => {
         clearInterval(interval)
@@ -80,7 +80,7 @@ export default function Statbar() {
                     <Circle className='flex flex-col justify-around place-items-center'>
                         <Image src={personIcon} alt="person icon" />
                         <div className='text-center text-white tracking-wide font-bold'>
-                            <p id='trial' className='trial'>{num.members}+</p>
+                            <p id='trial' className='trial'>{num.current}+</p>
                             <p>Members</p>
                         </div>
                     </Circle>
