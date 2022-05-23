@@ -23,7 +23,7 @@ export const Circle = styled.div`
     height: 10em;
 
     border-radius : 50%;
-    margin : 3em 0em 3em 0em;
+    margin : 1.2em 0em 1.2em 0em;
 
     box-shadow : 0 0 2em rgba(0, 0, 0, 0.7);
 
