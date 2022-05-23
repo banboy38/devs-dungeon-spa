@@ -45,7 +45,7 @@ export default function Gola({icon, alt, val, text, id}){
             <Circle className='flex flex-col justify-around place-items-center'>
                 <Image src={icon} alt={alt} />
                 <div className='text-center text-white tracking-wide font-bold'>
-                    <p id={id} className='trial'>{myObject.prop1}</p>
+                    <p id={id} className='trial'></p>
                     <p>{text}</p>
                 </div>
             </Circle>
