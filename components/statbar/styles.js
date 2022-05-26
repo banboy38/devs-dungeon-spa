@@ -5,7 +5,7 @@ export const StatBar = styled.div`
     
     border-radius: 50px;
     // background: #F2F2F2;
-    background : #121212;
+    background : rgb(17, 24, 39);
     box-shadow:  0px 0px 8px #0f0f0f;
     min-height : 469px;
     // margin-top : 8em;
@@ -18,7 +18,7 @@ export const Circle = styled.div`
 
     // background : #121212;
     // background : linear-gradient(180deg, #080808 18.54%, #121212 100%);
-    background : #711A75;
+    background : rgb(112 26 117);
     backdrop-filter: blur(500px);
     
     width: 240.17px;
