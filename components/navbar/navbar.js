@@ -36,9 +36,9 @@ export default function Navbar() {
 
                     `}
                 </Script>
-                <NavBar id='bar' className='barInitial flex justify-between place-items-center'>
+                <NavBar id='bar' className='barInitial flex justify-around md:justify-between place-items-center'>
                     <Link href='#'><Image alt="logo" src={logo}></Image></Link> {/*placeholder="blur"*/}
-                    <div className='flex gap-[1.5em] font-medium '>
+                    <div className='hidden md:flex gap-[1.5em] font-medium '>
                         <Link href = '#'>Home</Link>
                         <Link href = '#about'>About</Link>
                         <Link href = '#'>Team</Link>

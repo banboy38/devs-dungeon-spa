@@ -9,7 +9,8 @@ export const StatBar = styled.div`
     box-shadow:  0px 0px 8px #0f0f0f;
     min-height : 469px;
     // margin-top : 8em;
-    margin : 8em 1em 0em 1em;
+    margin : 8em 1em 20vh 1em;
+    padding : 1em 1em 1em 1em;
 
 `
 
@@ -21,10 +22,11 @@ export const Circle = styled.div`
     background : rgb(112 26 117);
     backdrop-filter: blur(500px);
     
-    width: 240.17px;
-    height: 244.01px;
+    width: 10em;
+    height: 10em;
 
     border-radius : 50%;
+    margin : 1.2em 0em 1.2em 0em;
 
     box-shadow : 0 0 2em rgba(0, 0, 0, 0.7);
 

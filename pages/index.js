@@ -48,9 +48,9 @@ export default function Home() {
 
       <Navbar/>
       
-      <div className='mt-[6rem] md:mt-[7rem] gap-5 flex justify-around place-items-center p-7'>
+      <div className='mt-[6rem] md:mt-[7rem] gap-5 flex flex-wrap flex-col-reverse md:flex-nowrap md:flex-row justify-around place-items-center p-2'>
 
-        <div className='text-[rgba(255,255,255,1)] w-[636px] h-[137px]'>
+        <div className='text-[rgba(255,255,255,1)] w-[90%] md:w-[50%]'>
           <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
           <p className='rounded-full bg-white text-black shadow-lg hover:text-white hover:bg-gray-900 text-center pt-[0.2em] p-[0.3em] mt-4 w-[5em]'><Link href='#'>Join Us</Link></p>
         </div>
@@ -64,11 +64,11 @@ export default function Home() {
 
         <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Perks of joining us</div>
         
-        <div className='mt-[0vh] gap-5 flex justify-around place-items-center p-7'>
+        <div className='mt-[0vh] gap-5 flex flex-wrap justify-around place-items-center p-2'>
           
           <Image alt="abstract office picture" src={twoPic}></Image>
 
-          <div className='text-[rgba(255,255,255,1)] w-[50%]'>
+          <div className='text-[rgba(255,255,255,1)] w-[90%] md:w-[50%]'>
             <ul>
               <li>➤ Share your work, get advice and collaborate with a large diverse group</li>
               <li>➤ Grow your connection and meet new friends and business contacts</li>
