@@ -32,4 +32,6 @@ export const Circle = styled.div`
 
     padding : 2em;
 
+    z-index : 4;
+
 `

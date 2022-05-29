@@ -1,10 +1,8 @@
 import { useEffect, useState, useRef } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import Script from 'next/script'
-import { StatBar, Circle } from './styles'
+
+import { StatBar } from './styles'
+
 import Gola from './theCircle'
-import anime from 'animejs'
 
 import personIcon from '../../public/personIcon.svg'
 import globeIcon from'../../public/globeIcon.svg'
@@ -24,37 +22,9 @@ export default function Statbar() {
    
     
     if(browser){   
-
-
-        
-
         
         return(
             <>
-                <Script>
-                    {`
-                        
-                    //     var nodes = document.querySelectorAll(".trial");
-                    
-                    //     for (var i = 0; i < nodes.length; i++) {
-                    //         var windowHeight = window.innerHeight;
-                    //         var elementTop = nodes[i].getBoundingClientRect().top;
-
-                    //         if (elementTop < (85/100)*windowHeight) {
-                    //             nodes[i].classList.add("active");
-                    //         }
-                    //         else {
-                    //             nodes[i].classList.remove("active");
-                    //         }
-                    //     }
-                        
-
-                    //     if(typeof window !== 'undefined'){
-                    //         window.addEventListener("scroll", reveal);
-                    //       }
-                    // `}
-                </Script>
-
                 <StatBar className='flex flex-wrap gap-y-2 justify-around place-items-center'>
 
                     <Gola icon = {personIcon} val={100} alt="person icon" text="Members" id="members"/>
