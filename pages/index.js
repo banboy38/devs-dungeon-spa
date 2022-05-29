@@ -98,7 +98,7 @@ export default function Home() {
         
         <div className='text-center text-2xl text-white font-semibold mt-[5rem] '>Meet Our Team</div>
 
-        <StatBar className='flex flex-wrap gap-y-2 justify-around place-items-center' style={{"marginTop":"2rem"}}>
+        <StatBar id="team" className='flex flex-wrap gap-y-2 justify-around place-items-center' style={{"marginTop":"2rem"}}>
             <Card photo={surana} name="Shubham Surana" role="Founder" instaUser="boss__is__always__right" githubUser='Neklaustares-tPtwP' linkedinUser='subham-surana'/>
             <Card photo={banboy} name="Anirban Aditya Halder" role="DevOps Manager" instaUser="banboy38" githubUser='banboy38' linkedinUser='anirban-aditya-halder'/>
             <Card photo={purty} name="Abhishek Purty" role="Backend Developer" instaUser="purty_abhishek" githubUser="AbhishekPurty" linkedinUser='abhishek-purty-07'/>

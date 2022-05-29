@@ -41,7 +41,7 @@ export default function Navbar() {
                     <div className='hidden md:flex gap-[1.5em] font-medium '>
                         <Link href = '#'>Home</Link>
                         <Link href = '#about'>About</Link>
-                        <Link href = '#'>Team</Link>
+                        <Link href = '#team'>Team</Link>
                         <Link href = '#'>Opportunities</Link>
                         <Link href = '#'>Blogs</Link>
                         <Link href = '#'>Contact</Link>
