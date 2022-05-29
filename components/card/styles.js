@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TheCard = styled.div`
-    height : 12rem;
+    height : 15rem;
     width : 12rem;
 
     background : rgb(112 26 117);    
@@ -14,4 +14,6 @@ export const TheCard = styled.div`
 
     padding : 10px;
     border-radius: 20px;
+
+    box-shadow : 0 0 1rem rgba(0,0,0,1);
 `

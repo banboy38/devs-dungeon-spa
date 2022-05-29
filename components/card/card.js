@@ -18,8 +18,8 @@ export default function Card({photo, name, role, instaUser="", githubUser="", li
                 <TheCard>
                     <Image className="rounded" height="120px" width="120px" src={photo} placeholder="blur"></Image>
                     <p className="font-semibold">{name}</p>
-                    <p className="text-sm">{role}</p>
-                    <p className="w-[70%] flex flex-row justify-evenly"><a href={"https://github.com/"+githubUser} target="_blank"><FaGithub/></a> <a href={"https://instagram.com/"+instaUser} target="_blank"><FaInstagram/></a> <a href={"https://linkedin.com/in/" + linkedinUser} target="_blank"><FaLinkedinIn/></a></p>
+                    <p className="text-sm mt-[-1rem]">{role}</p>
+                    <p className="w-[70%] flex flex-row justify-evenly"><a href={"https://linkedin.com/in/" + linkedinUser} target="_blank"><FaLinkedinIn/></a> <a href={"https://github.com/"+githubUser} target="_blank"><FaGithub/></a> <a href={"https://instagram.com/"+instaUser} target="_blank"><FaInstagram/></a></p>
                     
                 </TheCard>
             </>

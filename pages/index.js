@@ -12,7 +12,8 @@ import { useEffect, useState } from 'react'
 
 import surana from '../public/surana-pic.png'
 import banboy from '../public/banboy-pic.png'
-
+import purty from '../public/purty.png'
+import ronin from '../public/ronin-pic.png'
 
 export default function Home() {
 
@@ -74,7 +75,7 @@ export default function Home() {
 
           <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Perks of joining us</div>
           
-          <div className='mt-[0vh] gap-5 flex flex-wrap justify-around place-items-center p-2'>
+          <div className='mt-[15vh] gap-5 flex flex-wrap justify-around place-items-center p-2'>
             
             <Image alt="abstract office picture" src={twoPic}></Image>
 
@@ -98,8 +99,10 @@ export default function Home() {
         <div className='text-center text-2xl text-white font-semibold mt-[5rem] '>Meet Our Team</div>
 
         <StatBar className='flex flex-wrap gap-y-2 justify-around place-items-center' style={{"marginTop":"2rem"}}>
-            <Card photo={surana} name="Shubham Surana" role="Founder" instaUser="boss__is__always__right" githubUser='neklaustares-tptwp'/>
-            <Card photo={banboy} name="Anirban Aditya Halder" role="Founder ka dost" instaUser="banboy38" githubUser='banboy38' linkedinUser='anirban-aditya-halder'/>
+            <Card photo={surana} name="Shubham Surana" role="Founder" instaUser="boss__is__always__right" githubUser='Neklaustares-tPtwP' linkedinUser='subham-surana'/>
+            <Card photo={banboy} name="Anirban Aditya Halder" role="DevOps Manager" instaUser="banboy38" githubUser='banboy38' linkedinUser='anirban-aditya-halder'/>
+            <Card photo={purty} name="Abhishek Purty" role="Backend Developer" instaUser="purty_abhishek" githubUser="AbhishekPurty" linkedinUser='abhishek-purty-07'/>
+            {/* <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/> */}
         </StatBar>
     
         

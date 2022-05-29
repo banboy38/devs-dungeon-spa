@@ -25,7 +25,7 @@ export default function Statbar() {
         
         return(
             <>
-                <StatBar className='flex flex-wrap gap-y-2 justify-around place-items-center'>
+                <StatBar className='flex flex-wrap gap-y-2  gap-x-2 justify-around place-items-center'>
 
                     <Gola icon = {personIcon} val={100} alt="person icon" text="Members" id="members"/>
 
