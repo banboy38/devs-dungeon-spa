@@ -32,30 +32,8 @@ export default function Home() {
         </Head>
 
         <Script>
-            {`
-
-            function fadeUp() {
-              var reveals = document.querySelectorAll(".textAnim");
-
-              for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 0;
-                // console.log(elementTop, windowHeight, elementVisible);
-                if (elementTop < (80/100)*windowHeight) {
-                  reveals[i].classList.remove("fade");
-                } else {
-                  reveals[i].classList.add("fade");
-                }
-              }
-            }
-
-            if(typeof window !== 'undefined'){
-              window.addEventListener("scroll", fadeUp);
-            }
-
-            `}
-          </Script>
+            
+        </Script>
 
         <Navbar/>
         
@@ -103,9 +81,10 @@ export default function Home() {
             <Card photo={surana} name="Shubham Surana" role="Founder" instaUser="boss__is__always__right" githubUser='Neklaustares-tPtwP' linkedinUser='subham-surana'/>
             <Card photo={banboy} name="Anirban Aditya Halder" role="DevOps Manager" instaUser="banboy38" githubUser='banboy38' linkedinUser='anirban-aditya-halder'/>
             <Card photo={purty} name="Abhishek Purty" role="Backend Developer" instaUser="purty_abhishek" githubUser="AbhishekPurty" linkedinUser='abhishek-purty-07'/>
-            {/* <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/> */}
+            <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
-    
+
+        
         
 
       </>
