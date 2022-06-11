@@ -15,6 +15,8 @@ import banboy from '../public/banboy-pic.png'
 import purty from '../public/purty.png'
 import ronin from '../public/ronin-pic.png'
 
+import {AiTwotoneMail} from 'react-icons/ai'
+
 export default function Home() {
 
 
@@ -84,7 +86,40 @@ export default function Home() {
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
 
-        
+        <div className=' bg-[#111827] min-h-[12rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-5'>
+          
+          <div className='flex flex-col gap-5 basis-1/3'>
+            <img src = '/Group 137.png' width="50%"></img>
+            <p>DEVs Dungeon is a community of developers connecting from across the world to collaborate, create and learn simultaneously</p>
+          </div>
+
+          
+          <div className='flex  flex-col gap-3 basis-1/3'>
+            <p className=' font-bold sm:font-semibold'>Quick Links</p>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Team</li>
+              <li>Opportunities</li>
+              <li>Blogs</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          
+
+          <div className='flex  flex-col gap-5 basis-1/3'>
+            <div className='flex flex-col gap-3'>
+              <p className=' font-bold sm:font-semibold'>Contact Us</p>
+              <p >✉️ Email: devs.dungeon.community@gmail.com</p>
+            </div>
+            
+            <div className='flex flex-col gap-3'>
+              <p className=' font-bold sm:font-semibold'>Follow Us</p>
+              <p >😎 👍🏽 📞 📲 📽️ 📑 ❤️</p>
+            </div>
+
+          </div>
+        </div>
         
 
       </>
