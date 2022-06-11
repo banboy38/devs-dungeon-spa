@@ -36,12 +36,12 @@ export default function Navbar() {
 
                     `}
                 </Script>
-                <NavBar id='bar' className='barInitial flex justify-between place-items-center'>
+                <NavBar id='bar' className='barInitial flex justify-around md:justify-between place-items-center'>
                     <Link href='#'><Image alt="logo" src={logo}></Image></Link> {/*placeholder="blur"*/}
-                    <div className='flex gap-[1.5em] font-bold '>
+                    <div className='hidden md:flex gap-[1.5em] font-medium '>
                         <Link href = '#'>Home</Link>
                         <Link href = '#about'>About</Link>
-                        <Link href = '#'>Team</Link>
+                        <Link href = '#team'>Team</Link>
                         <Link href = '#'>Opportunities</Link>
                         <Link href = '#'>Blogs</Link>
                         <Link href = '#'>Contact</Link>
