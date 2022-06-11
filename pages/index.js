@@ -15,7 +15,8 @@ import banboy from '../public/banboy-pic.png'
 import purty from '../public/purty.png'
 import ronin from '../public/ronin-pic.png'
 
-import {AiTwotoneMail} from 'react-icons/ai'
+import {AiTwotoneMail, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter, AiFillLinkedin, AiFillYoutube, AiFillFacebook, } from 'react-icons/ai'
+import {FaDiscord, FaPhone, FaWhatsapp, FaWhatsappSquare} from 'react-icons/fa'
 
 export default function Home() {
 
@@ -26,6 +27,8 @@ export default function Home() {
   }, [])
   
   if(browser){
+
+
     return (
       <>
 
@@ -34,7 +37,24 @@ export default function Home() {
         </Head>
 
         <Script>
-            
+        {`
+            function fadeUp() {
+              var reveals = document.querySelectorAll(".textAnim");
+              for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+
+                if (elementTop < (50/100)*windowHeight) {
+                  reveals[i].classList.remove("fade");
+                } else {
+                  reveals[i].classList.add("fade");
+                }
+              }
+            }
+            if(typeof window !== 'undefined'){
+              window.addEventListener("scroll", fadeUp);
+            }
+          `}
         </Script>
 
         <Navbar/>
@@ -51,7 +71,7 @@ export default function Home() {
 
         <div id = "about"></div>
 
-        <div className='textAnim'>
+        <div className='textAnim fade'>
 
           <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Perks of joining us</div>
           
@@ -86,7 +106,7 @@ export default function Home() {
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
 
-        <div className=' bg-[#111827] min-h-[12rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-5'>
+        <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-5'>
           
           <div className='flex flex-col gap-5 basis-1/3'>
             <img src = '/Group 137.png' width="50%"></img>
@@ -110,12 +130,12 @@ export default function Home() {
           <div className='flex  flex-col gap-5 basis-1/3'>
             <div className='flex flex-col gap-3'>
               <p className=' font-bold sm:font-semibold'>Contact Us</p>
-              <p >✉️ Email: devs.dungeon.community@gmail.com</p>
+              <p className='flex flex-row gap-2'><AiTwotoneMail className='mt-1'/> <FaWhatsapp className='mt-1'/> <FaPhone className='mt-1'/>{/*<p className='hidden sm:block'>devs.dungeon.community@gmail.com</p>*/}</p>
             </div>
             
             <div className='flex flex-col gap-3'>
               <p className=' font-bold sm:font-semibold'>Follow Us</p>
-              <p >😎 👍🏽 📞 📲 📽️ 📑 ❤️</p>
+              <p className='flex flex-row gap-2'><a><FaDiscord/></a> <a><AiFillLinkedin/></a> <a><AiOutlineGithub/></a> <a><AiFillYoutube/></a> <a><AiFillFacebook/></a> <a><AiOutlineTwitter/></a> <a><AiOutlineInstagram/></a></p>
             </div>
 
           </div>
