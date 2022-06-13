@@ -17,6 +17,7 @@ import ronin from '../public/ronin-pic.png'
 
 import {AiTwotoneMail, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter, AiFillLinkedin, AiFillYoutube, AiFillFacebook, } from 'react-icons/ai'
 import {FaDiscord, FaPhone, FaWhatsapp, FaWhatsappSquare} from 'react-icons/fa'
+import Contact from '../components/contact/contact'
 
 export default function Home() {
 
@@ -106,6 +107,9 @@ export default function Home() {
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
 
+        <div>
+          <Contact></Contact>
+        </div>
         <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10'>
           
           <div className='flex flex-col gap-5 basis-1/3'>
