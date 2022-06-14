@@ -107,10 +107,13 @@ export default function Home() {
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
 
-        <div>
+        
+
+        <div className="object-fill bg-[url('/public/pngegg.png')]">
           <Contact></Contact>
         </div>
-        <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10'>
+
+        <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
           
           <div className='flex flex-col gap-5 basis-1/3'>
             <img src = '/Group 137.png' width="50%"></img>
