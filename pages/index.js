@@ -108,13 +108,13 @@ export default function Home() {
         </StatBar>
 
         <StatBar>
-          <Contact></Contact>
+          <Contact className="bg-[url('/public/pngegg.png')]"></Contact>
         </StatBar>        
 
         <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
           
           <div className='flex flex-col gap-5 basis-1/3'>
-            <img src = '/Group 137.png' width="50%"></img>
+            <img src = '/Group 137.png' width="50%" alt="Dev Dungeon"></img>
             <p>DEVs Dungeon is a community of developers connecting from across the world to collaborate, create and learn simultaneously</p>
           </div>
 
