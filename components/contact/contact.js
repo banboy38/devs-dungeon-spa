@@ -20,7 +20,7 @@ export default function Contact(){
             <form id="myForm" name="email-form" data-name="Email Form" className="flex flex-col gap-y-2 text-black">
                 <input type="text" className="" maxLength={256} name="Full-Name" data-name="Full Name" placeholder="Your Full Name " id="Full-Name" required=""></input><br/>
                     <input type="email" className="" maxLength={256} name="Email" data-name="Email" placeholder="Your E-mail" id="Email" required=""></input><br/>
-                        <textarea placeholder="Your Message..." maxLength={5000} id="Message" name="Message" data-name="Message" required="" class=""></textarea><br/>
+                        <textarea placeholder="Your Message..." maxLength={5000} id="Message" name="Message" data-name="Message" required="" className=""></textarea><br/>
                         <input name="submit" type="submit" value="Submit" data-wait="Please wait..." className="mt-10 py-1 mx-auto px-5 rounded-md text-white text-sm bg-[#701a75] drop-shadow-lg" onClick=""></input><br/>
 
             </form>
