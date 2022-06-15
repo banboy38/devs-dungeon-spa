@@ -13,18 +13,18 @@ export default function Contact(){
 
         return(
         <> 
-            <div className=" textAnim fade"><div className="flex flex-col gap-y-2 justify-items-center  bg-[url('/public/pngegg.png'">
-            <h1 className="text-center text-2xl text-white font-semibold]">Contact Us</h1>
+            <div className="textAnim fade mt-2 "><div className=" bg-[url('/public/pngegg.png'">
+            <h1 className="text-center text-3xl text-white"><b>Contact Us</b></h1>
             <br/>
             <div className="mx-[20em]">
-            <form id="myForm" name="email-form" data-name="Email Form" className=" grid m-auto w-4/5 gap-2 text-black">
-                <div className=" rounded-sm bg-white"><input type="text" className="" maxLength={256} name="Full-Name" data-name="Full Name" placeholder=" Your Full Name " id="Full-Name" required=""></input></div>
+            <form id="myForm" name="email-form" data-name="Email Form" className=" flex flex-col justify-items-center m-auto w-4/5 gap-y-2 text-black">
+                <input type="text" className="rounded-sm" maxLength={256} name="Full-Name" data-name="Full Name" placeholder=" Your Full Name " id="Full-Name" required=""></input>
                 <br/>
-                <div className=" rounded-sm bg-white"><input type="email" className="" maxLength={256} name="Email" data-name="Email" placeholder=" Your E-mail" id="Email" required=""></input></div><br/>
-                <div className=" rounded-sm bg-white"><textarea placeholder=" Your Message..." maxLength={5000} id="Message" name="Message" data-name="Message" required="" className=""></textarea></div>
+                <input type="email" className="rounded-sm" maxLength={256} name="Email" data-name="Email" placeholder=" Your E-mail" id="Email" required=""></input><br/>
+                <textarea placeholder=" Your Message..." maxLength={5000} id="Message" name="Message" data-name="Message" required="" className="rounded-sm"></textarea>
                 <br/>
                 <br/>
-                        <input name="submit" type="submit" value="Submit" data-wait="Please wait..." className="mt-10 py-1 mx-auto px-5 rounded-lg text-white text-sm bg-[#701a75] drop-shadow-lg" onClick=""></input><br/>
+                       <div className="flex rounded-sm"> <input name="submit" type="submit" value="Submit" data-wait="Please wait..." className="mt-3 py-1 mx-auto px-5 rounded-lg text-white text-sm bg-[#701a75] drop-shadow-lg hover:bg-[#621b66] hover:scale-105" onClick=""></input></div><br/>
 
             </form>
            

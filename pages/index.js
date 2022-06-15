@@ -108,10 +108,10 @@ export default function Home() {
         </StatBar>
 
         <StatBar className='pt-3'>
-          <Contact className="textAnim fade"></Contact>
+          <Contact></Contact>
         </StatBar>        
-
-        <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
+        {/* #111827 */}
+        <div className=' bg-[url(/public/pngegg.jpg)] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
           
           <div className='flex flex-col gap-5 basis-1/3'>
             <img src = '/Group 137.png' width="50%" alt="Dev Dungeon"></img>
