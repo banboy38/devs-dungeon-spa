@@ -107,8 +107,8 @@ export default function Home() {
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
 
-        <StatBar>
-          <Contact className="bg-[url('/public/pngegg.png')]"></Contact>
+        <StatBar className='pt-3'>
+          <Contact className="textAnim fade"></Contact>
         </StatBar>        
 
         <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
@@ -120,7 +120,7 @@ export default function Home() {
 
           
           <div className='flex  flex-col gap-3 basis-1/3'>
-            <p className=' font-bold sm:font-semibold'>Quick Links</p>
+            <p className=' font-bold sm:font-semibold underline'>Quick Links</p>
             <ul>
               <li>Home</li>
               <li>About</li>
@@ -134,13 +134,13 @@ export default function Home() {
 
           <div className='flex  flex-col gap-5 basis-1/3'>
             <div className='flex flex-col gap-3'>
-              <p className=' font-bold sm:font-semibold'>Contact Us</p>
-              <p className='flex flex-row gap-2'><AiTwotoneMail className='mt-1'/> <FaWhatsapp className='mt-1'/> <FaPhone className='mt-1'/>{/*<p className='hidden sm:block'>devs.dungeon.community@gmail.com</p>*/}</p>
+              <p className=' font-bold sm:font-semibold underline'>Contact Us</p>
+              <p className='flex flex-row gap-2'><a href="mailto:rahulsoren90@gmail.com?subject=Mail from our Website"><AiTwotoneMail className='mt-1'/></a> <a href="https://wa.me/919971380184"><FaWhatsapp className='mt-1'/></a> <FaPhone className='mt-1'/>{/*<p className='hidden sm:block'>devs.dungeon.community@gmail.com</p>*/}</p>
             </div>
             
             <div className='flex flex-col gap-3'>
-              <p className=' font-bold sm:font-semibold'>Follow Us</p>
-              <p className='flex flex-row gap-2'><a><FaDiscord/></a> <a><AiFillLinkedin/></a> <a><AiOutlineGithub/></a> <a><AiFillYoutube/></a> <a><AiFillFacebook/></a> <a><AiOutlineTwitter/></a> <a><AiOutlineInstagram/></a></p>
+              <p className=' font-bold sm:font-semibold underline'>Follow Us</p>
+              <p className='flex flex-row gap-3'><a><FaDiscord/></a> <a><AiFillLinkedin/></a> <a><AiOutlineGithub/></a> <a><AiFillYoutube/></a> <a><AiFillFacebook/></a> <a><AiOutlineTwitter/></a> <a><AiOutlineInstagram/></a></p>
             </div>
 
           </div>
