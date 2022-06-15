@@ -13,7 +13,7 @@ export const TheCard = styled.div`
     place-items : center;
 
     padding : 10px;
-    border-radius: 20px;
+    border-radius: 50px;
 
     box-shadow : 0 0 1rem rgba(0,0,0,1);
 `

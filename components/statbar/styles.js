@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const StatBar = styled.div`
     // background: linear-gradient(263.39deg, #D8F3FF 7.94%, rgba(197, 182, 255, 0.710417) 101.06%, rgba(255, 88, 148, 0) 120.67%);
     
-    row-gap : 1.25rem;
+    
+    row-gap : 2.5rem;
     border-radius: 50px;
     // background: #F2F2F2;
     background : rgb(17, 24, 39);
@@ -11,7 +12,7 @@ export const StatBar = styled.div`
     min-height : 469px;
     // margin-top : 8em;
     margin : 8em 1em 20vh 1em;
-    padding : 1em 1em 1em 1em;
+    padding : 2em 1em 2em 1em;
 
 `
 
