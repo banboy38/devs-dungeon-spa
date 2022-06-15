@@ -17,6 +17,7 @@ import ronin from '../public/ronin-pic.png'
 
 import {AiTwotoneMail, AiOutlineInstagram, AiOutlineGithub, AiOutlineTwitter, AiFillLinkedin, AiFillYoutube, AiFillFacebook, } from 'react-icons/ai'
 import {FaDiscord, FaPhone, FaWhatsapp, FaWhatsappSquare} from 'react-icons/fa'
+import Contact from '../components/contact/contact'
 
 export default function Home() {
 
@@ -105,17 +106,21 @@ export default function Home() {
             <Card photo={purty} name="Abhishek Purty" role="Backend Developer" instaUser="purty_abhishek" githubUser="AbhishekPurty" linkedinUser='abhishek-purty-07'/>
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
-
-        <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10'>
+        <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Contact us</div>
+        <StatBar>
+          <Contact></Contact>
+        </StatBar>        
+        {/* #111827 */}
+        <div className=' bg-[url(/public/pngegg.jpg)] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
           
           <div className='flex flex-col gap-5 basis-1/3'>
-            <img src = '/Group 137.png' width="50%"></img>
+            <img src = '/Group 137.png' width="50%" alt="Dev Dungeon"></img>
             <p>DEVs Dungeon is a community of developers connecting from across the world to collaborate, create and learn simultaneously</p>
           </div>
 
           
           <div className='flex  flex-col gap-3 basis-1/3'>
-            <p className=' font-bold sm:font-semibold'>Quick Links</p>
+            <p className=' font-bold sm:font-semibold underline'>Quick Links</p>
             <ul>
               <li>Home</li>
               <li>About</li>
@@ -129,13 +134,13 @@ export default function Home() {
 
           <div className='flex  flex-col gap-5 basis-1/3'>
             <div className='flex flex-col gap-3'>
-              <p className=' font-bold sm:font-semibold'>Contact Us</p>
-              <p className='flex flex-row gap-2'><AiTwotoneMail className='mt-1'/> <FaWhatsapp className='mt-1'/> <FaPhone className='mt-1'/>{/*<p className='hidden sm:block'>devs.dungeon.community@gmail.com</p>*/}</p>
+              <p className=' font-bold sm:font-semibold underline'>Contact Us</p>
+              <p className='flex flex-row gap-2'><a href="mailto:rahulsoren90@gmail.com?subject=Mail from our Website"><AiTwotoneMail className='mt-1'/></a> <a href="https://wa.me/919971380184"><FaWhatsapp className='mt-1'/></a> <FaPhone className='mt-1'/>{/*<p className='hidden sm:block'>devs.dungeon.community@gmail.com</p>*/}</p>
             </div>
             
             <div className='flex flex-col gap-3'>
-              <p className=' font-bold sm:font-semibold'>Follow Us</p>
-              <p className='flex flex-row gap-2'><a><FaDiscord/></a> <a><AiFillLinkedin/></a> <a><AiOutlineGithub/></a> <a><AiFillYoutube/></a> <a><AiFillFacebook/></a> <a><AiOutlineTwitter/></a> <a><AiOutlineInstagram/></a></p>
+              <p className=' font-bold sm:font-semibold underline'>Follow Us</p>
+              <p className='flex flex-row gap-3'><a><FaDiscord/></a> <a><AiFillLinkedin/></a> <a><AiOutlineGithub/></a> <a><AiFillYoutube/></a> <a><AiFillFacebook/></a> <a><AiOutlineTwitter/></a> <a><AiOutlineInstagram/></a></p>
             </div>
 
           </div>
