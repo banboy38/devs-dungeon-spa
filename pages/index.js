@@ -106,8 +106,8 @@ export default function Home() {
             <Card photo={purty} name="Abhishek Purty" role="Backend Developer" instaUser="purty_abhishek" githubUser="AbhishekPurty" linkedinUser='abhishek-purty-07'/>
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
-
-        <StatBar className='pt-3'>
+        <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Contact us</div>
+        <StatBar>
           <Contact></Contact>
         </StatBar>        
         {/* #111827 */}

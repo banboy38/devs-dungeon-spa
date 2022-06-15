@@ -14,7 +14,7 @@ export default function Contact(){
         return(
         <> 
             <div className="textAnim fade mt-2 "><div className=" bg-[url('/public/pngegg.png'">
-            <h1 className="text-center text-3xl text-white"><b>Contact Us</b></h1>
+            <h1 className="text-center text-3xl text-white"></h1>
             <br/>
             <div className="mx-[20em]">
             <form id="myForm" name="email-form" data-name="Email Form" className=" flex flex-col justify-items-center m-auto w-4/5 gap-y-2 text-black">
