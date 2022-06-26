@@ -1,5 +1,6 @@
+import Image from "next/image"
 import { useState, useEffect } from "react"
-
+import Map from '../../public/pngegg.png'
 
 export default function Contact(){
     const [browser, setBrowser] = useState(false)
@@ -13,29 +14,34 @@ export default function Contact(){
 
         return(
         <> 
-            <div className="textAnim fade mt-2 "><div className=" bg-[url('/public/pngegg.png'">
-            <h1 className="text-center text-3xl text-white"></h1>
-            <br/>
-            <div className="mx-[20em]">
-            <form id="myForm" name="email-form" data-name="Email Form" className=" flex flex-col justify-items-center m-auto w-4/5 gap-y-2 text-black">
-                <input type="text" className="rounded-sm" maxLength={256} name="Full-Name" data-name="Full Name" placeholder=" Your Full Name " id="Full-Name" required=""></input>
-                <br/>
-                <input type="email" className="rounded-sm" maxLength={256} name="Email" data-name="Email" placeholder=" Your E-mail" id="Email" required=""></input><br/>
-                <textarea placeholder=" Your Message..." maxLength={5000} id="Message" name="Message" data-name="Message" required="" className="rounded-sm"></textarea>
-                <br/>
-                <br/>
-                       <div className="flex rounded-sm"> <input name="submit" type="submit" value="Submit" data-wait="Please wait..." className="mt-3 py-1 mx-auto px-5 rounded-lg text-white text-sm bg-[#701a75] drop-shadow-lg hover:bg-[#621b66] hover:scale-105" onClick=""></input></div><br/>
+            <div className="mt-2 m-10 flex lg:flex-row-reverse flex-col gap-x-8 gap-y-5 text-[#121212]">
 
-            </form>
-           
-                    {/* <div className=" text-center">
-                        <div class="text-block">Thank you! Your submission has been received!</div>
+                <div className="basis-1/2 flex place-items-center mb-5">
+                    <Image src={Map} quality="100%"></Image>
+                </div>
+
+                <form id="myForm" name="email-form" data-name="Email Form" className="basis-1/2 flex flex-col  gap-y-5">
+                    
+                    <div className="">
+                        <div className="mb-3 text-[#f2f2f2]"><label for="Full-Name">Name</label></div>
+                        <input type="text" className="rounded-sm h-[2rem] w-full" maxLength={32} name="Full-Name" data-name="Full Name" placeholder=" Full Name " id=" Full-Name" required="true"></input>
                     </div>
-                    <div className="text-center">
-                        <div>Oops! Something went wrong while submitting the form.</div>
-                    </div>         */}
-            </div>  
-            </div></div>
+                    
+                    <div>
+                        <div className="mb-3 text-[#f2f2f2]"><label for="Email">Email</label></div>
+                        <input type="email" className="rounded-sm h-[2rem] w-full" maxLength={32} name="Email" data-name="Email" placeholder=" E-mail" id="Email" required="true"></input>
+                    </div>
+                    
+                    <div>
+                        <div className="mb-3 text-[#f2f2f2]"><label for="Message">Message</label></div>
+                        <textarea placeholder=" Message..." className="rounded-sm w-full" rows={5} maxLength={5000} id="Message" name="Message" data-name="Message" required="true" ></textarea>
+                    </div>
+                    
+                    <input name="submit" type="submit" value="Submit" data-wait="Please wait..." className="py-1 mx-auto px-5 rounded-lg text-white text-sm bg-[#701a75] drop-shadow-lg hover:bg-[#621b66] hover:scale-105 duration-300 hover:cursor-pointer"></input>
+
+                </form>                     
+                
+            </div>
         </>
         )
     }

@@ -64,7 +64,7 @@ export default function Home() {
 
           <div className='text-[rgba(255,255,255,1)] w-[90%] md:w-[50%]'>
             <p>We are one of the world's fastest growing developers' community, connecting thousands of developers from across the world and making learning much more collaborative and fun.</p>
-            <p className='rounded-full bg-white text-black shadow-lg hover:text-white hover:bg-gray-900 text-center pt-[0.2em] p-[0.3em] mt-4 w-[5em]'><Link href='#'>Join Us</Link></p>
+            <p className='rounded-full bg-white text-black shadow-lg hover:text-white hover:bg-gray-900 text-center pt-[0.2em] p-[0.3em] mt-4 w-[5em] hover:cursor-pointer duration-300'><Link href='#'>Join Us</Link></p>
           </div>
           <Image alt="abstract office picture" src={mainPic}></Image>
 
@@ -106,12 +106,18 @@ export default function Home() {
             <Card photo={purty} name="Abhishek Purty" role="Backend Developer" instaUser="purty_abhishek" githubUser="AbhishekPurty" linkedinUser='abhishek-purty-07'/>
             <Card photo={ronin} name="Rahul Raj Soren" role="Frontend Developer" instaUser="_rahul.soren_" githubUser="Roninraj" linkedinUser='rahul-raj-soren-082a98194'/>
         </StatBar>
-        <div className='text-center text-2xl text-white font-semibold mt-[5rem]'>Contact us</div>
-        <StatBar>
+        
+
+        <div id=""></div>
+        <div id="" className='text-center text-2xl text-white font-semibold mt-[30vh] '>Have something to say?</div>
+
+        <StatBar style={{"marginTop":"2rem"}}>
           <Contact></Contact>
-        </StatBar>        
+        </StatBar>
+
         {/* #111827 */}
-        <div className=' bg-[url(/public/pngegg.jpg)] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
+        <div id="contact"></div>
+        <div className=' bg-[#111827] min-h-[14rem] text-sm flex flex-col sm:flex-row gap-x-20 gap-y-10 justify-between p-10 mt-[30vh]'>
           
           <div className='flex flex-col gap-5 basis-1/3'>
             <img src = '/Group 137.png' width="50%" alt="Dev Dungeon"></img>
@@ -140,7 +146,7 @@ export default function Home() {
             
             <div className='flex flex-col gap-3'>
               <p className=' font-bold sm:font-semibold underline'>Follow Us</p>
-              <p className='flex flex-row gap-3'><a><FaDiscord/></a> <a><AiFillLinkedin/></a> <a><AiOutlineGithub/></a> <a><AiFillYoutube/></a> <a><AiFillFacebook/></a> <a><AiOutlineTwitter/></a> <a><AiOutlineInstagram/></a></p>
+              <p className='flex flex-row flex-wrap gap-3'><a><FaDiscord/></a> <a><AiFillLinkedin/></a> <a><AiOutlineGithub/></a> <a><AiFillYoutube/></a> <a><AiFillFacebook/></a> <a><AiOutlineTwitter/></a> <a><AiOutlineInstagram/></a></p>
             </div>
 
           </div>

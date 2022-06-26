@@ -44,7 +44,7 @@ export default function Navbar() {
                         <Link href = '#team'>Team</Link>
                         <Link href = '#'>Opportunities</Link>
                         <Link href = '#'>Blogs</Link>
-                        <Link href = '#'>Contact</Link>
+                        <Link href = '#contact'>Contact</Link>
                     </div>
                 </NavBar>   
             </>
