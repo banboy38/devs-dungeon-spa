@@ -17,7 +17,7 @@ export default function Contact(){
             <div className="mt-2 m-10 flex lg:flex-row-reverse flex-col gap-x-8 gap-y-5 text-[#121212]">
 
                 <div className="basis-1/2 flex place-items-center mb-5">
-                    <Image src={Map} quality="100%" alt="purple geometric world-map"></Image>
+                    <Image src={Map} quality="100%" placeholder="blur" alt="purple geometric world-map"></Image>
                 </div>
 
                 <form id="myForm" name="email-form" data-name="Email Form" className="basis-1/2 flex flex-col  gap-y-5">
